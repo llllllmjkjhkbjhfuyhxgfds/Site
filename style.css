@@ -1,14 +1,15 @@
+/* Configuração geral */
 html, body {
     height: 100%;
+    min-height: 100vh; /* Garante que ocupa toda a tela */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
     text-align: center;
     color: white; /* Define a cor branca */
+    font-family: Arial, sans-serif;
 }
 
+/* Fundo desfocado */
 body::before {
     content: "";
     position: fixed;
@@ -18,36 +19,30 @@ body::before {
     height: 100vh;
     background-image: url('fundo.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     filter: blur(5px);
     z-index: -1;
 }
 
+/* Container responsivo */
 .container {
-    max-width: 800px;
+    max-width: 90%; /* Ajuste para evitar cortes em telas pequenas */
+    width: 800px;
+    margin: auto;
     padding: 20px;
     position: relative;
     z-index: 1;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-    z-index: 1; /* Garante que o conteúdo esteja sobre o fundo */
-}
-
-header {
-    margin-bottom: 20px;
-}
-
+/* Logo responsiva */
 .logo {
-    width: 200px;
+    width: 50%; /* Ajuste automático */
+    max-width: 200px;
     height: auto;
 }
 
+/* Botões responsivos */
 .btn {
     display: inline-block;
     background-color: #ff9800;
@@ -56,25 +51,29 @@ header {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    font-size: 1em;
 }
 
 .btn:hover {
     background-color: #e68900;
 }
 
+/* Cartões VIP */
 .vip-card {
-    background-color: rgba(51, 51, 51, 0.8); /* Torna o fundo do cartão semi-transparente */
+    background-color: rgba(51, 51, 51, 0.8);
     padding: 15px;
     border-radius: 10px;
     margin: 10px 0;
+    text-align: center;
 }
 
 .vip-card img {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Ajuste para telas pequenas */
+    height: 80px;
     border-radius: 10px;
 }
 
+/* Links */
 .link {
     color: #ff9800;
     text-decoration: none;
@@ -82,4 +81,25 @@ header {
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .vip-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
 }
