@@ -21,7 +21,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(15px);
+    filter: blur(10px);
     z-index: -1;
 }
 
@@ -43,7 +43,7 @@ body::before {
 }
 
 /* Botões responsivos */
-.btn {
+.btn, .btn-compra {
     display: inline-block;
     background-color: #ff9800;
     color: white;
@@ -52,10 +52,6 @@ body::before {
     border-radius: 5px;
     margin-top: 20px;
     font-size: 1em;
-}
-
-.btn:hover {
-    background-color: #e68900;
 }
 
 /* Cartões VIP */
@@ -75,12 +71,21 @@ body::before {
 
 /* Links */
 .link {
-    color: #ff9800;
+    color: #00a8ff;
     text-decoration: none;
 }
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* Estilos específicos para links do Discord e WhatsApp */
+.discord-link {
+    color: #5865F2; /* Azul do Discord */
+}
+
+.whatsapp-link {
+    color: #25D366; /* Verde do WhatsApp */
 }
 
 /* Ajustes para telas menores */
@@ -98,7 +103,7 @@ body::before {
         height: 70px;
     }
 
-    .btn {
+    .btn, .btn-compra {
         padding: 8px 15px;
         font-size: 0.9em;
     }
