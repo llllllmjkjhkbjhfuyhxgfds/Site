@@ -1,0 +1,39 @@
+/* Reset básico */
+
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+
+/* Estilo do corpo */ body { background-color: #121212; color: #ffffff; text-align: center; line-height: 1.6; }
+
+/* Navbar fixa e alinhada */ .navbar { position: fixed; top: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.9); padding: 8px 15px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); }
+
+.logo { height: 50px; }
+
+.nav-buttons a { color: #f1c40f; text-decoration: none; font-size: 18px; margin: 0 25px; font-weight: bold; transition: color 0.3s ease; }
+
+.nav-buttons a:hover { color: #ffffff; }
+
+/* Container Diamantes */ .diamante-container { padding-top: 100px; max-width: 900px; margin: auto; text-align: center; }
+
+.diamante-card { background: #222; padding: 20px; border-radius: 10px; margin: 20px; display: inline-block; width: 80%; }
+
+.diamante-card img { width: 180px; /* Aumenta o tamanho da imagem */ height: auto; display: block; margin: 10px auto; }
+
+.diamante-buttons { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
+
+.btn-buy, .btn-back { text-decoration: none; background: transparent; color: #ffffff; border: 2px solid #f1c40f; padding: 8px 14px; font-weight: bold; border-radius: 5px; transition: all 0.3s ease; }
+
+.btn-buy:hover, .btn-back:hover { background: #f1c40f; color: #000; }
+
+/* Responsividade */ @media screen and (max-width: 768px) { .diamante-container { padding-top: 120px; }
+
+.diamante-buttons {
+    flex-direction: column;
+}
+
+.diamante-card img {
+    width: 150px; /* Aumenta um pouco em telas menores */
+}
+
+}
+
