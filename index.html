@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costa do Sol</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            backdrop-filter: blur(5px);
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 300px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #f1c40f;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="musica.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <div class="container">
+        <img src="logo.png" alt="Costa do Sol" class="logo">
+        <p>Sua vida nova começa aqui.</p>
+        <a href="início.html" class="btn">Entrar</a>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/costadosolrp?igsh=YzljYTk1ODg3Zg==" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com" target="_blank"><img src="YouTube.png" alt="YouTube"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://discord.gg/cm8CmYJf" target="_blank"><img src="discord.png" alt="Discord"></a>
+        </div>
+    </div>
+
+</body>
+</html>

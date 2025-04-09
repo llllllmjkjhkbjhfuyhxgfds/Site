@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP GTA RP FiveM - Costa do Sol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+    <a href="index.html">
+        <img src="logo.png" alt="Logo Costa do Sol" class="logo">
+    </a>
+    <div class="nav-buttons">
+        <a href="vip.html" class="btn-nav">Planos VIPs</a>
+        <a href="diamante.html" class="btn-nav">Diamantes</a>
+        <a href="https://lojadeveiculoscostadosol.vercel.app/" class="btn-nav">Veículos</a>
+    </div>
+</nav>
+</header>
+<section class="hero">
+    <h1>Bem-vindo ao <strong>Costa do Sol</strong></h1>
+    <p>O melhor servidor de GTA RP FiveM! Nossa cidade oferece uma experiência única, com economia balanceada, eventos exclusivos e uma comunidade ativa e engajada.</p>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="cidade1.jpg" alt="Cidade Costa do Sol 1">
+            <img src="cidade2.jpg" alt="Cidade Costa do Sol 2">
+            <img src="cidade3.jpg" alt="Cidade Costa do Sol 3">
+        </div>
+    </div>
+</section>
+<section class="features">
+    <h2>O que você encontra na Costa do Sol?</h2>
+    <ul>
+        <li>🌆 <strong>Ambiente Imersivo</strong> - Uma cidade vibrante cheia de possibilidades.</li>
+        <li>🚗 <strong>Veículos Exclusivos</strong> - Carros personalizados e realistas.</li>
+        <li>🏡 <strong>Casas e Negócios</strong> - Sistema imobiliário para sua vida no RP.</li>
+        <li>⚖️ <strong>Economia Equilibrada</strong> - Trabalho, empresas e oportunidades.</li>
+        <li>🎭 <strong>Eventos Únicos</strong> - Competições, festas e roleplays inesquecíveis.</li>
+        <li>👮 <strong>Facções e Profissões</strong> - Trabalhe como policial, médico, mecânico e mais!</li>
+    </ul>
+</section>
+<section id="planos-vip" class="vip">
+    <h2>Planos VIP</h2>
+    <p>Escolha um plano VIP e aproveite benefícios exclusivos.</p>
+    <ul>
+        <li>🥉 <strong>VIP Bronze</strong> - Salário extra, acesso a veículos especiais.</li>
+        <li>🥈 <strong>VIP Prata</strong> - Benefícios do Bronze + acesso a áreas exclusivas.</li>
+        <li>🥇 <strong>VIP Ouro</strong> - Tudo do Prata + personalização avançada.</li>
+        <li>💎 <strong>VIP Diamante</strong> - Todos os benefícios anteriores + vantagens exclusivas.</li>
+    </ul>
+</section>
+<section id="compra-diamantes" class="diamantes">
+    <h2>Compra de Diamantes</h2>
+    <p>Os diamantes são a moeda premium do Costa do Sol RP! Utilize-os para adquirir itens especiais, veículos raros, propriedades exclusivas e muito mais.</p>
+    <ul>
+        <li>💠 <strong>Loja Exclusiva</strong> - Acesse produtos raros e diferenciados.</li>
+        <li>⚡ <strong>Vantagens no Servidor</strong> - Economize tempo e melhore sua experiência.</li>
+        <li>🎁 <strong>Pacotes Especiais</strong> - Promoções e bônus por quantidades maiores.</li>
+    </ul>
+</section>
+<section id="loja-veiculos" class="store">
+    <h2>Loja de Veículos</h2>
+    <p>Encontre os melhores veículos para sua jornada no RP.</p>
+    <ul>
+        <li>🚗 <strong>Carros Esportivos</strong> - Alta performance e velocidade.</li>
+        <li>🚙 <strong>Veículos Off-Road</strong> - Para aventuras extremas.</li>
+        <li>🚛 <strong>Caminhões</strong> - Transporte de cargas pesadas.</li>
+    </ul>
+</section>
+<section id="depoimentos" class="testimonials">
+    <h2>O que dizem nossos jogadores?</h2>
+    <blockquote>“Melhor servidor de RP que já joguei! Comunidade super amigável.” - João S.</blockquote>
+    <blockquote>“Eventos incríveis e suporte sempre presente!” - Ana P.</blockquote>
+</section>
+<footer>
+    <p>&copy; 2025 Costa do Sol RP - Todos os direitos reservados</p>
+</footer>
+<script>
+    let index = 0;
+    function slideShow() {
+        const slides = document.querySelectorAll(".slider img");
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? "1" : "0";
+            slide.style.transition = "opacity 1s ease-in-out";
+        });
+        index = (index + 1) % slides.length;
+    }
+    setInterval(slideShow, 3000);
+    slideShow();
+</script>
+</body>
+</html>
